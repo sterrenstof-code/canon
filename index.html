@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Kunst App</title>
+    <link
+      rel="stylesheet"
+      href="https://maxst.icons8.com/vue-static/landings/line-awesome/font-awesome-line-awesome/css/all.min.css"
+    />
+
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.linearicons.com/free/1.0.0/icon-font.min.css"
+    />
+    <script src="script.js" defer></script>
+  </head>
+  <body>
+    <main>
+      <div class="background-img">
+        <header>
+          <p class="header-title">CANON</p>
+        </header>
+        <div class="title-section">
+          <div class="title-section-title">SANDRO BOTTICELLI</div>
+          <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Perspiciatis, quis?</p>
+        </div>
+        <div class="info-block-one">
+          <h3>Lorem ipsum dolor sit.</h3>
+          <p>&dashv;&Tab;Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem repellendus quisquam ut iste necessitatibus praesentium.</p>
+        </div>
+        <div class="info-block-two">
+          <h3>Lorem ipsum dolor sit.</h3>
+          <p>&dashv;&Tab;Lorem ipsu dolor sit amet consectetur adipisicing elit. Autem repellendus quisquam ut iste necessitatibus praesentium.</p>
+        </div>
+
+      </div> 
+
+
+      <div class="popular-section search-section" id="search-section">
+        <input type="text" id="search-term" />
+        <button id="search">Search</button>
+      </div>
+
+      <div class="popular-section search-options">
+        <p class="search-options-text">Search amonst highlights of the collection</p>
+        <input
+        type="checkbox"
+        id="isHighlightchecked"
+        name="isHighlight"
+        value="checked"
+      />
+      <p class="search-options-amount">Items shown</p>
+      <select id="quantity" name="amount">
+        <option value="1">1</option>
+        <option value="5">5</option>
+        <option value="10">10</option>
+        <option value="50">50</option>
+      </select>
+      </div>  
+      
+
+      <!-- Search results section -->
+
+      <div class="search-results" id="search-results"></div>
+
+      <!-- Popular Art pieces-->
+
+      <div class="popular-section" id="popular-section">
+        <div class="popular-title">
+          <h1 class="title-section-first">POPULAR</h1>
+        </div>
+        <!-- <div class="horizontal-line"></div> -->
+        <div class="popular-artist-section">
+          <ul>
+            <li class="favorites-btn">
+              <img  src="./Botticelli-primavera.jpeg" alt="" />
+            </li>
+            <span class="lnr lnr-cross"></span>
+            <li>
+              <img src="https://static.dw.com/image/42368180_303.jpg" alt="" />
+              
+            </li>
+            <span class="lnr lnr-cross"></span>
+            <li>
+              <img src="./Botticelli-primavera.jpeg" alt="" />
+          
+            </li>
+            <span class="lnr lnr-cross"></span>
+            <li>
+              <img src="https://static.dw.com/image/42368049_303.jpg" alt="" />
+              
+            </li>
+            <span class="lnr lnr-cross"></span>
+            <li>
+              <img src="./Botticelli-primavera.jpeg" alt="" />
+             
+            </li>
+            <span class="lnr lnr-cross"></span>
+            <li>
+              <img src="./Botticelli-primavera.jpeg" alt="" />
+              
+            </li>
+            <span class="lnr lnr-cross"></span>
+          </ul>
+          <div class="popular-artist-title">
+            <div class="popular-artist-title-sub">Leonardo da Vinci</div>
+            <div class="popular-artist-title-arrow">&dashv;</div>
+          </div>
+          <div class="popular-artist-title-date">1452 - 1519</div>
+        </div>
+        <!-- <div class="horizontal-line"></div> -->
+      </div>
+
+      <!-- Info section -->
+
+      <div class="main-title">
+        
+      </div>
+
+
+
+      <h2 class="h2">
+        Dutch paintings of the seventeenth century-
+        <span><i>the</i></span> Golden Age of Rembrandt, Hals, and Vermeer.
+      </h2>
+
+      <div class="main-title-text">
+        <h3 class="h3">
+          Since it was founded in 1870, The Met has always inspired to be more
+          than a treasury. The Metropolitan Museum of Art of New York City,
+          colloquially "the Met" is the largest art museum in the United
+          States.
+        </h3>
+        <p>
+          The main building at 1000 Fifth Avenue, along the Museum Mile on the
+          eastern edge of Central Park in Manhattan's Upper East Side, is by
+          area one of the world's largest art galleries. A much smaller second
+          location, The Cloisters at Fort Tryon Park in Upper Manhattan,
+          contains an extensive collection of art, architecture, and artifacts
+          from medieval Europe.
+        </p>
+        <p>
+          The museum's permanent collection consists of works of art from
+          classical antiquity and ancient Egypt, paintings, and sculptures from
+          nearly all the European masters, and an extensive collection of
+          American and modern art. The Met maintains extensive holdings of
+          African, Asian, Oceanian, Byzantine, and Islamic art.
+        </p>
+        <p>&dashv;</p>
+      </div>
+
+      <div class="info-image-container-pin">
+       
+      </div>
+
+      <h1 class="h1">
+        I dream <i>of</i> painting and then I paint my dream.&cedil;
+      </h1>
+
+      <div class="main-title-text single-column">
+        <p>
+          The Metropolitan Museum of Art of New York City, colloquially "the
+          Met," is the largest art museum in the United States. Its permanent
+          collection contains over 2 million works.
+        </p>
+        <p>
+          The museum's permanent collection consists of works of art from
+          classical antiquity and ancient Egypt, paintings, and sculptures from
+          nearly all the European masters, and an extensive collection of
+          American and modern art. The Met maintains extensive holdings of
+          African, Asian, Oceanian, Byzantine, and Islamic art.
+        </p>
+      </div>
+
+      <div class="info-image-container">
+        <a class="hallow-number" href="">&not;1992</a>
+      </div>
+
+      <p class="single-column">
+        EXHIBITION <br />
+        OBJECTS
+      </p>
+        <div class="exhibition-carousel">
+         
+        </div>
+
+      <p class="single-column orientation-duo">
+        FULL <br />
+        LOCATION
+      </p>
+
+      <h1 class="h1 place-duo">New York</h1>
+
+      <div class="details-div">
+        <div class="details">
+          <h4>Unit 1000</h4>
+          <h4>Fifth Avenue</h4>
+          <h4>New York, NY</h4>
+          <h4>10028</h4>
+          <p></p>
+          <p>+32 0234048276</p>
+        </div>
+        <div class="details">
+          <h4>Unit 1000</h4>
+          <h4>Fifth Avenue</h4>
+          <h4>New York, NY</h4>
+          <h4>10028</h4>
+          <p></p>
+          <p>+32 0234048276</p>
+          <a href="#">&dashv; Get Directions</a>
+        </div>
+      </div>
+
+      <!-- Search section -->
+
+    </main>
+  </body>
+</html>
+
+
+
+<!-- 
+/* nog the doen: 
+1. position hearts and crosses correctly
+2. create favorite section that uses local storage and then fetches the painting by ID
+4. font dunner maken overal
+*/ -->

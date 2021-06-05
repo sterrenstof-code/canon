@@ -1,0 +1,552 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato&family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&display=swap");
+/* white: #dcd4c9;
+backgroundlight: #ccc5ba;
+black: #787169; 
+title-black: #554942;
+lines: #c2b9ae; 
+popular-artist-title: #8f847a*/
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+  overflow-x: hidden;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Lato", sans-serif;
+  overflow-x: hidden;
+  background-color: #f2efe8;
+}
+
+.background-img {
+  background-image: url("Botticelli-primavera.jpeg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+
+header {
+  overflow: hidden;
+  height: 100vh;
+  border-right: 1px solid #554942;
+  position: absolute;
+  width: 15vw;
+}
+
+.header-title {
+  margin: 0 auto;
+  padding: 2rem;
+  color: #dcd4c9;
+  background-color: #9b3a3541;
+}
+
+.header-title:hover {
+  background-color: #9b3a35;
+}
+
+.title-section {
+  color: #dcd4c9;
+  /* height: 50%;*/
+  font-size: 3.1rem;
+  width: 100vw;
+  overflow: hidden;
+  position: absolute;
+  bottom: 10vh;
+  left: 75vw;
+  transform: translate(-50%,-50%);
+}
+
+.title-section-first {
+  display: -webkit-box;
+   -webkit-line-clamp: 3;
+   -webkit-box-orient: vertical;
+   overflow: hidden;
+   text-overflow: ellipsis;
+}
+
+.title-section p {
+  width: 50%;
+  font-size: 24px;
+}
+
+.title-section-title {
+  margin: 0;
+  font-family: "Libre Baskerville", serif;
+  letter-spacing: 0.5rem;
+  font-size: 6rem;
+  width: 75vw;
+}
+
+.info-block-one {
+  position: absolute;
+  left: 15vw;
+  bottom: 0px;
+  width: 42.5vw;
+  border: 1px solid #554942;
+  border-left: none;
+  color: #d1c9be;
+  padding: 3rem;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  transition: 0.3s all;
+  background-color: #3b2b2b7a;
+}
+
+.info-block-one:hover {
+  background-image: url(./Botticelli-primavera.jpeg);
+}
+
+.info-block-two:hover {
+  background-image: url(./MED610v2.jpeg);
+}
+
+.info-block-two {
+  position: absolute;
+  right: 0vw;
+  bottom: 0px;
+  width: 42.5vw;
+  background-color: #3b2b2b7a;
+  border: 1px solid #554942;
+  border-left: none;
+  color: #d1c9be;
+  padding: 3rem;
+}
+
+
+.popular-section {
+  width: 100vw;
+  background-color: #f2efe8;
+}
+
+.search-options {
+  margin: 0 auto;
+  width: 50vw;
+  display: flex;
+  justify-content:center;
+  align-items: center;
+}
+
+.search-options > * {
+  margin: 0 .3rem;
+}
+
+
+.popular-artist-section {
+  padding: 1rem;
+  padding-right: 0;
+}
+
+.popular-artist-section ul {
+  display: flex;
+  overflow: auto;
+  /* flex-wrap: wrap; 
+    justify-content: center;*/
+  list-style-type: none;
+  padding: 0;
+}
+
+.popular-artist-section ul li img {
+  cursor: pointer;
+  position: relative;
+  margin-left: 0px;
+  width: 300px;
+  height: 300px;
+  object-fit: cover;
+  border-radius: 50%;
+  margin-bottom: 1rem;
+}
+
+.popular-artist-section .lnr {
+  color: black;
+  position: relative;
+  left: -5%;
+  top: 50%;
+  font-size: 40px; 
+}
+
+.horizontal-line {
+  width: 100vw;
+  height: 1px;
+  background-color: #c2b9ae;
+}
+
+.popular-artist-title {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.5rem 1rem 0.5rem 0;
+  color: #787169;
+}
+
+.popular-artist-title .lrn {
+  color: #787169;
+}
+
+.popular-artist-title-date {
+  color: #554942;
+}
+
+.popular-title {
+  min-width: 100%;
+  color: #554942;
+  font-family: "Libre Baskerville", serif;
+  min-width: 100vw;
+  overflow: hidden;
+  font-size: 2rem;
+  margin: 0;
+  font-weight: 400;
+}
+
+.popular-title h1 {
+  margin: 1rem 0;
+}
+
+.random-image img {
+  width: 100vw;
+  height: auto;
+  object-fit: cover;
+  /* border-top-left-radius: 50%;
+  border-top-right-radius: 50%; */
+}
+
+.search-section {
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 2rem 0;
+}
+
+.search-section input {
+  background-color: #eee;
+  border: 1px solid black;
+  font-family: inherit;
+  padding: 0.5rem 1rem;
+  width: 30%;
+  max-width: 300px;
+}
+
+.search-section button {
+  background-color: transparent;
+  border: none;
+  color: rgb(138, 129, 141);
+  font-size: 1.5rem;
+}
+
+#search {
+  color: #dcd4c9;
+  background-color: #554942;
+  margin: 0;
+  height: 100%;
+  padding: 0.2rem 1rem;
+  width: 30%;
+  max-width: 200px;
+}
+
+.hallow-number {
+  text-decoration: none;
+  color: transparent;
+  -webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-color: black;
+  font-size: 250px;
+  transform: translate(5%, -20%);
+}
+
+.main-title {
+  width: 100vw;
+  text-align: center;
+  padding: 4rem 1rem 2rem;
+  background-color: #f2efe8;
+}
+
+.main-title-info {
+  text-align: right;
+  font-size: 12px;
+  width: 50%;
+  margin: 0 auto;
+}
+
+.main-title-info a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.h1 {
+  color: #554942;
+  font-family: "Libre Baskerville", serif;
+  width: 65%;
+  font-size: 6rem;
+  margin: 0;
+  font-weight: 400;
+  margin: 0 auto;
+  padding: 1rem 0 0 0;
+  overflow-wrap: break-word;
+  hyphens: manual;
+}
+
+.intro-section .fa-heart{
+  position: absolute;
+  top: 5%;
+  right: 15%;
+  display:block;
+}
+
+.fa-heart{
+  border: none;
+  background-color: transparent;
+  color: rgba(36, 7, 7, 0.774);
+  cursor: pointer;
+  font-size: 2rem;
+  transition: 0.1s all ease-in-out;
+}
+
+.intro-image-container {
+  position: relative;
+}
+
+.intro-image-container:hover > .fa-heart{
+  display: block;
+  transform: scale(1.07);
+  color: rgba(255, 0, 0, 0.823);
+}
+
+.intro-section .fa-heart.active {
+  color: red;
+}
+
+.fa-heart:hover {
+  color: red;
+}
+
+.intro-image {
+  width: 50%;
+  margin: 1rem auto 0.5rem;
+}
+
+.h2 {
+  color: #554942;
+  font-family: "Libre Baskerville", serif;
+  width: 65%;
+  font-size: 2rem;
+  margin: 3rem auto 1rem;
+  text-align: center;
+}
+
+.main-title-text {
+  width: 50%;
+  column-count: 2;
+  column-gap: 40px;
+  margin: 0 auto;
+  padding: 3rem 0 0;
+}
+
+.h3 {
+  margin: 0;
+}
+
+.main-title-text p {
+  font-size: 14px;
+}
+
+.info-image-container {
+  display: flex;
+  justify-content: flex-end;
+  overflow: hidden;
+}
+
+.info-image {
+  width: 75%;
+  margin: 5rem 0;
+}
+
+.single-column {
+  columns: 1;
+  margin: 0;
+  width: 25%;
+  margin-left: 25%;
+}
+
+.exhibition-carousel ul {
+  padding: 4rem 0 0;
+  overflow: auto;
+  min-width:100vw;
+  display: flex;
+  flex-direction: row;
+  overflow: auto;
+  list-style-type: none;
+}
+
+.exhibition-carousel ul li {
+  min-width: 300px;
+  width: 30%;
+}
+
+.carousel-item {
+  width: 100%;
+  padding: 1.5rem;
+}
+
+.carousel-item img {
+  width: 100%;
+}
+
+::-webkit-scrollbar{
+  height: 3px;
+  width: 3px;
+  background: #c2b9ae96;
+}
+::-webkit-scrollbar-thumb:horizontal{
+  background: #787169;
+  border-radius: 50px;
+}
+
+.orientation-duo {
+  margin-top: 4rem;
+}
+
+.place-duo {
+  margin: 2rem 0 2rem 25%;
+  width: 50%;
+}
+
+.details-div {
+  width: 300px;
+  margin: 4rem auto 4rem 25%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.details {
+  min-width: 150px;
+}
+
+.details h4 {
+  margin: 0.5rem 0;
+}
+
+.details h4:first-of-type {
+  margin-top: 0;
+}
+
+.details p, a {
+  margin: 1.5rem 0 0.25rem 0;
+  font-size: 12px;
+  text-decoration: none;
+  color: inherit;
+}
+
+.search-result-container {
+  display: flex;
+  flex-direction: row;
+  justify-content:space-around;
+  flex-wrap: wrap;
+  flex: 1 1 50%;
+  margin: 4rem 2rem;
+  margin: 1rem 2rem;
+  padding: 1rem;
+}
+
+.search-result-container div {
+  max-width: 50vw;
+}
+
+.search-result-container-right img {
+  /* -moz-border-radius: 0px;
+  -webkit-border-radius:50% 50% 0px 0px;
+  border-radius: 50% 50% 3px 3px;  */
+  width: 70%;
+  height: 100%;
+  object-fit: cover;
+  margin: 0 auto;
+}
+
+.search-result-container:nth-child(even){
+  flex-direction: row-reverse;
+}
+
+
+.search-result-container-right a{
+  margin: 0 auto;
+  width: 100%;
+  display: flex;
+}
+
+.search-result-container-left {
+  max-width: 50vw;
+  text-align: left;
+}
+
+
+@media (max-width: 1281px) {
+  header {
+    width: 100vw;
+    height: 10vh;
+    position: relative;
+  }
+
+  .header-title {
+    height: 100%;;
+  }
+
+  .title-section{
+    display: none;
+  }
+
+  .info-block-one, .info-block-two {
+    width: 100vw;
+    height: 45vh;
+    position: relative;
+    left: 0;
+  }
+
+  .h1 {
+    width: 90%;
+    font-size: 3rem;
+  }
+
+  .intro-image {
+    width: 80%;
+    margin: 0 auto;
+  }
+
+  .main-title-text {
+    columns: 1;
+    column-count: 1;
+  }
+
+  .single-column {
+    width: 90%;
+    margin: 0 auto;
+  }
+
+  .hallow-number {
+    font-size: 150px;
+  }
+
+  .popular-artist-section ul li img {
+    width: 100px;
+    height: 100px;
+  }
+
+  .search-result-container div {
+    max-width: 100vw;
+  }
+
+  .search-options {
+    display: block;
+    margin: 0.3rem 20%;
+}
+}
