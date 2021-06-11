@@ -12,70 +12,139 @@ popular-artist-title: #8f847a*/
 
 html {
   scroll-behavior: smooth;
-  overflow-x: hidden;
+  /* overflow-x: hidden; */
+}
+
+img {
+  transition: .3s all ease-in-out;
+}
+
+img:hover {
+  transform: scale(0.99);
 }
 
 body {
   margin: 0;
   padding: 0;
   font-family: "Lato", sans-serif;
-  overflow-x: hidden;
+  /* overflow-x: hidden; */
+  overflow: auto;
   background-color: #f2efe8;
 }
 
+/* hoomepage */
+
 .background-img {
-  background-image: url("Botticelli-primavera.jpeg");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
   width: 100vw;
-  height: 100vh;
-  display: flex;
-  flex-wrap: wrap;
+  height: auto;
+  min-height: 30vh;
 }
 
+.title-section {
+  color: #dcd4c9;
+  font-size: 2rem;
+  display: flex;
+  flex-direction: column;
+  justify-content:center;
+  align-items: center;
+  text-align: center;
+}
+
+.info-block-one {
+  border: 1px solid #554942;
+  border-left: none;
+  color: #111111;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  transition: 0.3s all;
+  background-color: #3b2b2b7a;
+
+  max-height: 300px; 
+  position: relative;
+
+}
+
+.info-block-one img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: 0;
+  position: absolute;
+  z-index: 0;
+}
+
+.info-block-one p {
+  position: relative;
+  z-index: 10;
+  margin: 0;
+  padding: .5rem 2rem 0.5rem 2rem;
+}
+
+.info-block-one h3 {
+  position: relative;
+  z-index: 10;
+  margin: 0;
+  padding: 2rem 2rem 0.5rem 2rem;
+}
+
+.info-block-two {
+  background-color: #3b2b2b7a;
+  border: 1px solid #554942;
+  border-left: none;
+  color: #d1c9be;
+  padding: 3rem;
+}
 
 header {
-  overflow: hidden;
-  height: 100vh;
-  border-right: 1px solid #554942;
-  position: absolute;
-  width: 15vw;
+  position: fixed;
+  width: 200px;
+  height: 100px;
+  z-index: 10;
+  transition: 0.3s all ease-in-out;
 }
 
 .header-title {
+  text-align: center;
   margin: 0 auto;
   padding: 2rem;
   color: #dcd4c9;
-  background-color: #9b3a3541;
+  background-color: #9b3a35e1;
+  transition: 0.3s all ease-in-out;
+  cursor: pointer;
+  width: 100%;
 }
+
+.favo-info-cross {
+  cursor: pointer;
+  font-size: 40px;
+  margin: 0;
+}
+
+
+
+.header-title:hover span {display:none}
+
+.header-title:hover:before {content:"My Favorites"}
 
 .header-title:hover {
   background-color: #9b3a35;
 }
 
-.title-section {
-  color: #dcd4c9;
-  /* height: 50%;*/
-  font-size: 3.1rem;
-  width: 100vw;
-  overflow: hidden;
-  position: absolute;
-  bottom: 10vh;
-  left: 75vw;
-  transform: translate(-50%,-50%);
-}
-
-.title-section-first {
+/* .title-section-first {
   display: -webkit-box;
    -webkit-line-clamp: 3;
    -webkit-box-orient: vertical;
    overflow: hidden;
    text-overflow: ellipsis;
-}
+} */
 
 .title-section p {
   width: 50%;
+  margin: 2rem auto;
   font-size: 24px;
 }
 
@@ -83,110 +152,167 @@ header {
   margin: 0;
   font-family: "Libre Baskerville", serif;
   letter-spacing: 0.5rem;
-  font-size: 6rem;
+  font-size: 4rem;
   width: 75vw;
+  padding: 4rem 2rem;
 }
 
-.info-block-one {
-  position: absolute;
-  left: 15vw;
-  bottom: 0px;
-  width: 42.5vw;
-  border: 1px solid #554942;
-  border-left: none;
-  color: #d1c9be;
-  padding: 3rem;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  transition: 0.3s all;
-  background-color: #3b2b2b7a;
-}
-
-.info-block-one:hover {
-  background-image: url(./Botticelli-primavera.jpeg);
-}
-
-.info-block-two:hover {
-  background-image: url(./MED610v2.jpeg);
-}
-
-.info-block-two {
-  position: absolute;
-  right: 0vw;
-  bottom: 0px;
-  width: 42.5vw;
-  background-color: #3b2b2b7a;
-  border: 1px solid #554942;
-  border-left: none;
-  color: #d1c9be;
-  padding: 3rem;
-}
-
-
-.popular-section {
-  width: 100vw;
-  background-color: #f2efe8;
-}
-
-.search-options {
+.title-section-title p {
   margin: 0 auto;
-  width: 50vw;
+  font-size: 3rem;
+}
+
+/* search */
+
+.search-section-container {
+  margin-top: .5vh;
+  margin-left: auto;
+  display: inline-block;
+  float: right;
+  position: sticky;
+  bottom: 4vh;
+  right: 2vh;
+  background-color: #9b3a35f1;
+  padding: 0.5rem 2rem;
+}
+
+.search-section > * {
+  margin: 0 0.5rem;
+}
+
+.search-section {
   display: flex;
-  justify-content:center;
+  flex: 1 1 25%;
+  flex-wrap: wrap;
+  justify-content: center;
   align-items: center;
 }
 
-.search-options > * {
-  margin: 0 .3rem;
+.search-section input {
+  background-color: #eee;
+  border: 1px solid black;
+  font-family: inherit;
+  padding: 0.5rem 1rem;
 }
 
-
-.popular-artist-section {
-  padding: 1rem;
-  padding-right: 0;
+.search-section button {
+  background-color: transparent;
+  border: none;
+  color: rgb(138, 129, 141);
+  font-size: 1.5rem;
 }
 
-.popular-artist-section ul {
-  display: flex;
+#search {
+  font-family: inherit;
+  color: #dcd4c9;
+  background-color: #554942;
+  cursor: pointer; 
+  padding: 0.5rem 1rem;
+  font-size: 1rem;
+}
+
+#quantity {
+  display:block;
+  font-family: inherit;
+  color: #dcd4c9;
+  background-color: #554942;
+  cursor: pointer; 
+  padding: 0.5rem;
+  font-size: 1rem;
+}
+
+#quantity option {
+  padding:0;
+}
+
+#isHighlightchecked {
+  color: #dcd4c9;
+  background-color: #554942;
+  cursor: pointer; 
+  padding: 0.5rem;
+  font-size: 1rem;
+}
+
+.dropdown-content-item {
+  display: none;
+  position: relative;
+  width: 200px;
+  height: auto;
+  border-radius: 50%;
+}
+
+.dropdown-content a {
+  width: 100%;
+}
+
+.dropdown-content-item  a:hover {background-color: #ddd;}
+
+.dropdown:hover .dropdown-content-item  {display: block;}
+
+/* .dropdown-content-item:hover .dropdown-content-item  {display: block;} */
+
+header:hover {
+  width: 400px;
+  max-width: 100vw;
+  height: 100%;
+  background-color: white;
   overflow: auto;
-  /* flex-wrap: wrap; 
-    justify-content: center;*/
-  list-style-type: none;
-  padding: 0;
+}
+
+header:hover .dropdown-content-item {
+  width: 350px;
+  max-width: 100vw;
+  margin: 2rem auto;
+  height: auto;
+  display: block;
+}
+
+
+
+/* popular section */
+/* 
+.popular-artist-section {
+  display: flex;
+  flex-direction: column;
+  visibility: hidden;
+  opacity: 0;
+  position: absolute;
+  transition: all 0.5s ease;
+  margin-top: 1rem;
+  left: 0;
+  display: none;
+} */
+/* .header-title:hover > ul, .popular-artist-section:hover {
+  visibility: visible;
+  opacity: 1;
+  display: block;
+}
+
+.popular-artist-section li {
+  clear: both;
+  width: 100%;
 }
 
 .popular-artist-section ul li img {
   cursor: pointer;
   position: relative;
-  margin-left: 0px;
-  width: 300px;
-  height: 300px;
+  margin: 0px;
+  padding: 0;
+  width: 100%;
+  height: 100px;
   object-fit: cover;
-  border-radius: 50%;
-  margin-bottom: 1rem;
-}
+} */
 
-.popular-artist-section .lnr {
-  color: black;
-  position: relative;
-  left: -5%;
-  top: 50%;
-  font-size: 40px; 
-}
-
-.horizontal-line {
-  width: 100vw;
-  height: 1px;
-  background-color: #c2b9ae;
-}
-
-.popular-artist-title {
+/* .popular-artist-title {
   display: flex;
   justify-content: space-between;
   align-items: center;
   padding: 0.5rem 1rem 0.5rem 0;
   color: #787169;
+} */
+
+/* .slide-out {
+  position: absolute;
 }
 
 .popular-artist-title .lrn {
@@ -210,6 +336,14 @@ header {
 
 .popular-title h1 {
   margin: 1rem 0;
+} */
+
+/* helper classes */
+
+.horizontal-line {
+  width: 100vw;
+  height: 1px;
+  background-color: #c2b9ae;
 }
 
 .random-image img {
@@ -218,40 +352,6 @@ header {
   object-fit: cover;
   /* border-top-left-radius: 50%;
   border-top-right-radius: 50%; */
-}
-
-.search-section {
-  width: 100vw;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  padding: 2rem 0;
-}
-
-.search-section input {
-  background-color: #eee;
-  border: 1px solid black;
-  font-family: inherit;
-  padding: 0.5rem 1rem;
-  width: 30%;
-  max-width: 300px;
-}
-
-.search-section button {
-  background-color: transparent;
-  border: none;
-  color: rgb(138, 129, 141);
-  font-size: 1.5rem;
-}
-
-#search {
-  color: #dcd4c9;
-  background-color: #554942;
-  margin: 0;
-  height: 100%;
-  padding: 0.2rem 1rem;
-  width: 30%;
-  max-width: 200px;
 }
 
 .hallow-number {
@@ -268,6 +368,7 @@ header {
   text-align: center;
   padding: 4rem 1rem 2rem;
   background-color: #f2efe8;
+  border-top: 2px solid black;
 }
 
 .main-title-info {
@@ -290,48 +391,46 @@ header {
   margin: 0;
   font-weight: 400;
   margin: 0 auto;
-  padding: 1rem 0 0 0;
+  padding: 1rem 0;
   overflow-wrap: break-word;
   hyphens: manual;
-}
-
-.intro-section .fa-heart{
-  position: absolute;
-  top: 5%;
-  right: 15%;
-  display:block;
 }
 
 .fa-heart{
   border: none;
   background-color: transparent;
-  color: rgba(36, 7, 7, 0.774);
+  color: rgba(180, 127, 127, 0.774);
   cursor: pointer;
   font-size: 2rem;
   transition: 0.1s all ease-in-out;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
 
 .intro-image-container {
   position: relative;
 }
 
-.intro-image-container:hover > .fa-heart{
-  display: block;
-  transform: scale(1.07);
-  color: rgba(255, 0, 0, 0.823);
-}
-
-.intro-section .fa-heart.active {
+/* .intro-image-container:hover .fa-heart{
   color: red;
-}
+} */
 
 .fa-heart:hover {
   color: red;
+  font-size: 40px;
+}
+
+.active {
+  color: red;
+  font-size: 40px;
 }
 
 .intro-image {
   width: 50%;
   margin: 1rem auto 0.5rem;
+  border: 2px solid black;
 }
 
 .h2 {
@@ -339,8 +438,8 @@ header {
   font-family: "Libre Baskerville", serif;
   width: 65%;
   font-size: 2rem;
-  margin: 3rem auto 1rem;
-  text-align: center;
+  margin: 2rem auto 2rem;
+  text-align: left;
 }
 
 .main-title-text {
@@ -360,6 +459,7 @@ header {
 }
 
 .info-image-container {
+  position: relative;
   display: flex;
   justify-content: flex-end;
   overflow: hidden;
@@ -372,18 +472,17 @@ header {
 
 .single-column {
   columns: 1;
-  margin: 0;
+  margin: 3rem 0 0 0;
   width: 25%;
   margin-left: 25%;
 }
 
 .exhibition-carousel ul {
-  padding: 4rem 0 0;
+  padding: 0 0;
   overflow: auto;
   min-width:100vw;
   display: flex;
   flex-direction: row;
-  overflow: auto;
   list-style-type: none;
 }
 
@@ -399,9 +498,11 @@ header {
 
 .carousel-item img {
   width: 100%;
+  border: 2px solid black;
 }
 
 ::-webkit-scrollbar{
+ 
   height: 3px;
   width: 3px;
   background: #c2b9ae96;
@@ -460,7 +561,7 @@ header {
 }
 
 .search-result-container div {
-  max-width: 50vw;
+  max-width: 50%;
 }
 
 .search-result-container-right img {
@@ -489,32 +590,82 @@ header {
   text-align: left;
 }
 
+.favorites-btn-container {
+  position: relative;
+}
 
-@media (max-width: 1281px) {
-  header {
-    width: 100vw;
-    height: 10vh;
-    position: relative;
+.favorites-btn-container img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  border: 2px solid black;
+}
+
+.dropdown-content-item .fa-heart{
+  position: static;
+  font-size: 40px;
+  top: 0;
+  left: 0;
+  transform: none;
+  
+}
+
+.carousel-item-image-container {
+  position: relative;
+}
+
+.carousel-item-image-container:hover .fa-heart {
+  color: red;
+  font-size: 40px;
+}
+
+.favo-info {
+  transform: translateY(-3px);
+  display: flex;
+  justify-content:space-between;
+  align-items: center;
+  width: 100%;
+  background-color:  #ffffff;
+  padding: 0.5rem 1rem;
+  border: 1px solid #787169;
+}
+
+@media (max-width: 810px) {
+
+  .main-title {
+    padding: 4rem 0 2rem;
   }
 
-  .header-title {
-    height: 100%;;
+  .background-img {
+    height: auto;
   }
 
-  .title-section{
-    display: none;
+  .title-section-title {
+    font-size: 1.5rem;
+    padding-top: 150px;
   }
 
-  .info-block-one, .info-block-two {
-    width: 100vw;
-    height: 45vh;
-    position: relative;
-    left: 0;
+  .title-section p {
+    width: 90%;
+    font-size: 1rem;
+}
+
+  .info-block-one {
+    padding: 1.5rem;
+  }
+
+  .info-block-two {
+    padding: 1.5rem;
+  }
+
+  .h2 {
+    width: 90%;
+    font-size:1.5rem;
   }
 
   .h1 {
     width: 90%;
-    font-size: 3rem;
+    font-size: 2rem;
   }
 
   .intro-image {
@@ -525,6 +676,8 @@ header {
   .main-title-text {
     columns: 1;
     column-count: 1;
+    width: 90%;
+    padding: 1rem;
   }
 
   .single-column {
@@ -536,17 +689,37 @@ header {
     font-size: 150px;
   }
 
-  .popular-artist-section ul li img {
+  /* .popular-artist-section ul li img {
     width: 100px;
     height: 100px;
+  } */
+
+
+  .place-duo {
+    margin: 2rem auto;
+  }
+  .details-div {
+    width: 90%;
+    margin: 4rem auto;
   }
 
-  .search-result-container div {
-    max-width: 100vw;
+  .info-image {
+    margin: 2rem 0 3rem;
   }
 
-  .search-options {
-    display: block;
-    margin: 0.3rem 20%;
-}
+  .search-section-container {
+    padding: 0.5rem;
+  }
+  .single-column {
+    padding-top: 2rem;
+  }
+
+  .search-section {
+    justify-content: space-between;
+  }
+
+  .search-section > * {
+    margin: .5rem 0.1rem;
+  }
+  
 }
