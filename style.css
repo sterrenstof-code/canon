@@ -266,7 +266,7 @@ header {
   align-items: center;
   width: 100vw;
   height: 100vh;
-  background-color: red;
+  background-color: #9b3a35f5;
   z-index: 2;
   opacity: 1;
   transition: .3s all ease-in-out;
@@ -298,77 +298,6 @@ header:hover .dropdown-content-item {
   height: auto;
   display: block;
 }
-
-
-
-/* popular section */
-/* 
-.popular-artist-section {
-  display: flex;
-  flex-direction: column;
-  visibility: hidden;
-  opacity: 0;
-  position: absolute;
-  transition: all 0.5s ease;
-  margin-top: 1rem;
-  left: 0;
-  display: none;
-} */
-/* .header-title:hover > ul, .popular-artist-section:hover {
-  visibility: visible;
-  opacity: 1;
-  display: block;
-}
-
-.popular-artist-section li {
-  clear: both;
-  width: 100%;
-}
-
-.popular-artist-section ul li img {
-  cursor: pointer;
-  position: relative;
-  margin: 0px;
-  padding: 0;
-  width: 100%;
-  height: 100px;
-  object-fit: cover;
-} */
-
-/* .popular-artist-title {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 0.5rem 1rem 0.5rem 0;
-  color: #787169;
-} */
-
-/* .slide-out {
-  position: absolute;
-}
-
-.popular-artist-title .lrn {
-  color: #787169;
-}
-
-.popular-artist-title-date {
-  color: #554942;
-}
-
-.popular-title {
-  min-width: 100%;
-  color: #554942;
-  font-family: "Libre Baskerville", serif;
-  min-width: 100vw;
-  overflow: hidden;
-  font-size: 2rem;
-  margin: 0;
-  font-weight: 400;
-}
-
-.popular-title h1 {
-  margin: 1rem 0;
-} */
 
 /* helper classes */
 
@@ -720,11 +649,6 @@ header:hover .dropdown-content-item {
   .hallow-number {
     font-size: 150px;
   }
-
-  /* .popular-artist-section ul li img {
-    width: 100px;
-    height: 100px;
-  } */
 
 
   .place-duo {

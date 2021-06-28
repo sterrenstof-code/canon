@@ -5,7 +5,7 @@ document.addEventListener('DOMContentLoaded', (event) => {
     overlay.style.display ="none";
     overlayLoader.style.opacity = "0";
     setTimeout(() => {
-      overlayLoader.display="none";
+      overlayLoader.style.display="none";
     }, 500);
   }, 3000);
 })
