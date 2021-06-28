@@ -1,3 +1,14 @@
+document.addEventListener('DOMContentLoaded', (event) => {
+  setTimeout(() => {
+    const overlayLoader = document.querySelector(".overlay-loader");
+    const overlay = document.querySelector(".loader");
+    overlay.style.display ="none";
+    overlayLoader.style.opacity = "0";
+    setTimeout(() => {
+      overlayLoader.display="none";
+    }, 500);
+  }, 3000);
+})
 
 const searchTerm = document.querySelector("#search-term");
 const searchBtn = document.querySelector("#search");
